@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+
+.ceo {
+    margin-bottom: 20rem;
+    padding: 0 2.4rem;
+    @include g.mq('pc') {
+        margin-bottom: 40rem;
+    }
+    &__wrapper {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__heading {
+        @include g.heading;
+        margin-bottom: 3rem;
+        span {
+            @include g.heading-sub;
+        }
+        @include g.mq('pc') {
+            margin-bottom: 5rem;
+        }
+    }
+    &__inner {
+        @include g.mq('pc') {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__figure {
+        max-width: 327px;
+        width: 100%;
+        margin: 0 auto 2.6rem;
+        @include g.mq('pc') {
+            max-width: 460px;
+            margin: 0;
+        }
+    }
+    &__right {
+        max-width: 560px;
+        width: 100%;
+    }
+    &__title {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: g.$text;
+        line-height: 2;
+        margin-bottom: 1rem;
+        @include g.mq('pc') {
+            font-size: 2.4rem;
+            margin-bottom: 4rem;
+        }
+    }
+    &__block {
+        margin-bottom: 1rem;
+        @include g.mq('pc') {
+            margin-bottom: 3rem;
+        }
+    }
+    &__text {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: g.$text;
+        line-height: 2;
+        letter-spacing: 0.028em;
+        margin: 0 0 3rem;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+            letter-spacing: 0.036em;
+        }
+    }
+    &__text:last-of-type {
+        margin: 0;
+    }
+    &__sign {
+        width: 185px;
+        margin-left: auto;
+        @include g.mq('pc') {
+            width: 347px;
+        }
+    }
+
+}

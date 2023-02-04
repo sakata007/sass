@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.ses-procedures {
+    margin-bottom: 20rem;
+    @include g.mq('pc') {
+        margin-bottom: 40rem;
+    }
+    &__inner {
+        max-width: 1144px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 2.4rem;
+    }
+    &__heading {
+        @include g.heading;
+        margin-bottom: 3rem;
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+        span {
+            @include g.heading-sub;
+        }
+        @include g.mq('pc') {
+            margin-bottom: 5rem;
+        }
+    }
+    &__wrapper {
+        background-color: g.$sub2;
+        padding: 4rem 2.4rem 7rem;
+        margin-bottom: 8rem;
+        @include g.mq('pc') {
+            padding: 8rem 0 9rem;
+        }
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 970px;
+        width: 100%;
+        background-color: #fff;
+        padding: 3rem 2rem;
+        margin: 0 auto;
+        @include g.mq('pc') {
+            height: 160px;
+            padding: 0 5rem;
+        }
+    }
+    &__title {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2;
+        color: g.$text;
+        margin-bottom: 1rem;
+        @include g.mq('pc') {
+            font-size: 2.4rem;
+            margin-bottom: 0;
+        }
+    }
+    &__text {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2;
+        color: g.$text;
+        letter-spacing: 0.028em;
+        margin: 0;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+            letter-spacing: 0.036em;
+        }
+    }
+    &__block {
+        margin: 1rem 0;
+    }
+    &__dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: g.$text;
+        margin: 0 auto 0.4rem;
+        opacity: 0.1;
+        @include g.mq('pc') {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin: 10px auto;
+        }
+    }
+    &__btn {
+        @include g.btn-sub;
+        margin-left: 2.4rem;
+        @include g.mq('pc') {
+            margin: 0 auto;
+        }
+    }
+}

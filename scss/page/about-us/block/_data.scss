@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.data {
+    margin-bottom: 20rem;
+    @include g.mq('pc') {
+        margin-bottom: 38rem;
+    }
+    &__heading {
+        @include g.heading;
+        max-width: 1168px;
+        width: 100%;
+        margin: 0 auto 3rem;
+        padding-left: 2.4rem;
+        span {
+            @include g.heading-sub;
+        }
+        @include g.mq('pc') {
+            margin-bottom: 5rem;
+        }
+    }
+    &__scroll {
+        max-width: 100%;
+        overflow-x: auto;
+        padding-left: 2.4rem;
+        @media screen and (min-width: 1195px) {
+            padding-left: calc( (100vw - 1140px) / 2);
+        }
+    }
+    &__contents {
+        display: flex;
+        gap: 20px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-padding: 1rem;
+        margin: 0 auto;    
+    }
+    &__box {
+        flex: 0 0 280px;
+        height: 280px;
+        scroll-snap-align: start;
+        @include g.mq('pc') {
+            flex: 0 0 420px;
+            height: 420px;    
+        }
+    }
+    &__box:last-of-type img {
+        height: 280px;
+        width: 280px;
+        margin-right: 2.4rem;
+        @include g.mq('pc') {
+            height: 420px;
+            width: 420px;
+        }
+        @media screen and (min-width: g.$header-bp) {
+            margin-right: calc((100vw - 1120px) / 2);
+        }
+    }
+}
+
+
+
+

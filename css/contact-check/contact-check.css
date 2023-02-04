@@ -1,0 +1,289 @@
+@charset "UTF-8";
+.contact-check {
+  margin-bottom: 20rem;
+  padding: 0 2.4rem;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check {
+    margin: 12rem 0 40rem;
+  }
+}
+.contact-check__wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+.contact-check__heading {
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__heading {
+    font-size: 2.4rem;
+    height: 120px;
+    line-height: 120px;
+  }
+}
+.contact-check__bg {
+  background-color: #f7f7f7;
+  margin-bottom: 8rem;
+  padding: 5rem 1.6rem 6rem;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__bg {
+    padding: 8rem 12.5rem 7rem;
+  }
+}
+.contact-check__box {
+  margin-bottom: 3rem;
+}
+.contact-check__label {
+  color: #101010;
+  display: block;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__label {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+}
+.contact-check__input {
+  background-color: #fff;
+  border: none;
+  height: 80px;
+  padding: 0 2.5rem;
+  width: 100%;
+}
+.contact-check__input::-webkit-input-placeholder, .contact-check__textarea--sp::-webkit-input-placeholder, .contact-check__textarea--pc::-webkit-input-placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+.contact-check__input::-moz-placeholder, .contact-check__textarea--sp::-moz-placeholder, .contact-check__textarea--pc::-moz-placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+.contact-check__input:-ms-input-placeholder, .contact-check__textarea--sp:-ms-input-placeholder, .contact-check__textarea--pc:-ms-input-placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+.contact-check__input::-ms-input-placeholder, .contact-check__textarea--sp::-ms-input-placeholder, .contact-check__textarea--pc::-ms-input-placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+.contact-check__input::placeholder, .contact-check__textarea--sp::placeholder, .contact-check__textarea--pc::placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__input::-webkit-input-placeholder, .contact-check__textarea--sp::-webkit-input-placeholder, .contact-check__textarea--pc::-webkit-input-placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+  .contact-check__input::-moz-placeholder, .contact-check__textarea--sp::-moz-placeholder, .contact-check__textarea--pc::-moz-placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+  .contact-check__input:-ms-input-placeholder, .contact-check__textarea--sp:-ms-input-placeholder, .contact-check__textarea--pc:-ms-input-placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+  .contact-check__input::-ms-input-placeholder, .contact-check__textarea--sp::-ms-input-placeholder, .contact-check__textarea--pc::-ms-input-placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+  .contact-check__input::placeholder, .contact-check__textarea--sp::placeholder, .contact-check__textarea--pc::placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+}
+.contact-check__textarea {
+  background-color: #fff;
+  border: none;
+  height: 500px;
+  padding: 2.5rem;
+  resize: none;
+  width: 100%;
+}
+.contact-check__textarea--sp, .contact-check__textarea--pc {
+  background-color: #fff;
+  border: none;
+  border: none;
+  resize: none;
+  width: 100%;
+}
+.contact-check__textarea--sp {
+  height: 124px;
+  padding: 3rem 2.5rem 0;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__textarea--sp {
+    display: none;
+  }
+}
+.contact-check__textarea--pc {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__textarea--pc {
+    display: block;
+    height: 80px;
+    padding: 3rem 2.5rem 0;
+  }
+}
+.contact-check__wrap {
+  position: relative;
+  width: 100%;
+}
+.contact-check__wrap::after {
+  border-color: #C9C9C9 transparent transparent transparent;
+  border-style: solid;
+  border-width: 12px 12px 0 12px;
+  content: "";
+  height: 0px;
+  position: absolute;
+  right: 3%;
+  top: 45%;
+  width: 0px;
+}
+.contact-check__select {
+  border: none;
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 80px;
+  letter-spacing: 0.032em;
+  padding-left: 2.4rem;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__box--btn {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.contact-check__btn-correct {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #232323;
+  border-radius: 0 0 30px 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: acumin-pro, sans-serif;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: bold;
+  font-weight: bold;
+  height: 60px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 260px;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__btn-correct {
+    font-size: 1.8rem;
+  }
+}
+.contact-check__btn-correct:hover {
+  font-size: 1.7rem;
+  opacity: 1;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__btn-correct:hover {
+    font-size: 1.9rem;
+  }
+}
+.contact-check__btn-correct:hover {
+  background-color: #f7f7f7;
+  border: 2px solid #232323;
+  color: #232323;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__btn-correct {
+    margin: 0 auto;
+  }
+}
+.contact-check__btn-send {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#EF2615), to(#D6003F));
+  background: linear-gradient(to right, #EF2615 0%, #D6003F 100%);
+  border-radius: 0 0 30px 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  font-weight: bold;
+  height: 60px;
+  justify-content: center;
+  position: relative;
+  width: 260px;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__btn-send {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+}
+.contact-check__btn-send:hover {
+  background: #fff;
+  border-bottom: 2px solid #D6003F;
+  border-left: 2px solid #D6003F;
+  border-right: 2px solid #EF2615;
+  border-top: 2px solid #EF2615;
+  color: #EF2615;
+  font-size: 1.7rem;
+  opacity: 1;
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__btn-send:hover {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .contact-check__btn-send {
+    margin: 0 auto;
+  }
+}

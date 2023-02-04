@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.interview {
+    overflow-x: hidden;
+    padding-bottom: 11rem;
+    @include g.mq('pc') {    
+        padding-bottom: 32rem;
+    }
+    &__heading {
+        @include g.heading;
+        max-width: 1168px;
+        width: 100%;
+        margin: 0 auto 6.5rem;
+        padding-left: 2.4rem;
+        span {
+            @include g.heading-sub;
+        }
+        @include g.mq('pc') {
+            margin: 0 auto 3.5rem;
+        }
+    }
+    &__archive {
+        max-width: 100%;
+    }
+    &__link {
+        margin: 0 3rem 7rem 0;
+        @include g.mq('pc') {
+            margin: 0 6rem 7.2rem 0;
+        }
+    }
+    &__figure {
+        width: 280px;
+        margin-bottom: 1rem;
+        @include g.mq('tab') {
+            overflow: hidden;
+        }
+        @include g.mq('pc') {
+            width: 420px;
+        }
+    }
+    &__figure img {
+      transition: 0.3s all ease-out;
+      &:hover {
+        transform: scale(1.2,1.2);
+        transition: 0.3s all ease-out;
+      }
+    }
+    &__category {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        letter-spacing: 0.02em;
+        line-height: 2.6;
+        color: g.$text;
+        margin-bottom: 1rem;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+            line-height: 2;
+            letter-spacing: 0.036em;
+        }
+    }
+    &__title {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        color: g.$text;
+        @include g.mq('pc') {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+
+.interview__slider {
+  display: flex;
+}
+
+.slick-dots{
+    left: 0;
+    top: -12%;
+    white-space: nowrap;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    width: 100%;
+    margin-left: 2.4rem;
+    @include g.mq('pc') {
+        top: -17%;
+        left: 49%;
+        margin-left: 0;
+    }
+}
+
+.slick-dots li{
+    width: 28px;
+    height: 28px;
+    margin: 0 1.2rem 0 0;
+    @include g.mq('pc') {
+        width: 37px;
+        height: 37px;
+        margin-right: 3.4rem;
+    }
+}
+
+.slick-dots li button{
+    font-family: acumin-pro,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.6rem;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    color: g.$sub;
+    @include g.mq('pc') {
+        font-size: 1.8rem;
+    }
+}
+.slick-dots li button:before{
+    content:none;
+}
+
+.slick-dots li.slick-active button{
+    background-color: g.$sub;
+    color: g.$base;
+}
+
+.slick-slide {
+    @media screen and (min-width: 1195px) {
+        transform: translateX(calc((100vw - 1138px) / 2));
+    }
+  }
+
+ .slick-slider .slick-list {
+    padding-left: 2.4rem;
+    @media screen and (min-width: 1195px) {
+        padding-left: 0;
+    }
+ }
+
+

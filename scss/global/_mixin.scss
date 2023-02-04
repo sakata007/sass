@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@use "variables" as v;
+
+
+//media query
+@mixin mq($breakpoint: sp) {
+  @media #{map-get(v.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+// section heading
+@mixin heading {
+  font-family: acumin-pro, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.6rem;
+  color: v.$text;
+  line-height: 1.4;
+  @media screen and (min-width: 1025px) {
+    font-size: 3.4rem;
+  }
+}
+
+@mixin heading-sub {
+  display: block;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.032em;
+  color: v.$text;
+  @media screen and (min-width: 1025px) {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+}
+
+
+// トップページ　ボタン
+@mixin btn-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 60px;
+  border-radius: 0 0 30px 0;
+  font-family: acumin-pro, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: v.$base;
+  font-size: 1.6rem;
+  @media screen and (min-width: 1025px) {
+    font-size: 1.8rem;
+  }
+  &:hover {
+    font-size: 1.7rem;
+    opacity: 1;
+    @media screen and (min-width: 1025px) {
+      font-size: 1.9rem;
+    }  
+  }
+}
+
+
+// footer button
+@mixin btn-footer {
+  width: 100%;
+  height: 80px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: v.$base;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@mixin btn-footer-span {
+  display: block;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+
+//下層ページボタン
+@mixin btn-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 60px;
+  border-radius: 0 0 30px 0;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
+  color: v.$base;
+  font-size: 1.6rem;
+  position: relative;
+  background: linear-gradient(to right, v.$accent1 0%, v.$accent2 100%);
+  @media screen and (min-width: 1025px) {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+  &:hover {
+    font-size: 1.7rem;
+    background: v.$base;
+    color: v.$accent1;
+    border-right: 2px solid v.$accent1;
+    border-top: 2px solid v.$accent1;
+    border-left: 2px solid v.$accent2;
+    border-bottom: 2px solid v.$accent2;
+    opacity: 1;
+    @media screen and (min-width: 1025px) {
+      font-size: 1.9rem;
+    }  
+  }
+
+}

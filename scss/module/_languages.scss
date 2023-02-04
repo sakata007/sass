@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+.languages {
+    padding: 0 2.4rem;
+    margin-bottom: 20rem;
+    @include g.mq('pc') {
+        margin-bottom: 32rem;
+    }
+    &__wrapper {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__heading {
+        @include g.heading;
+        margin-bottom: 4rem;
+        span {
+            @include g.heading-sub;
+        }
+    }
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__box {
+        width: 27%;
+        text-align: center;
+        margin-bottom: 2rem;
+        @include g.mq('pc') {
+            width: 100px;
+            width: 15%;
+            margin-bottom: 5rem;
+        }
+        img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            @include g.mq('pc') {
+                width: 73px;
+                height: 73px;
+            }
+        }
+    }
+    &__box--empty {
+        display: none;
+        @include g.mq('pc') {
+            display: block;
+            width: 15%;
+        }
+
+    }
+    &__name {
+        font-family: acumin-pro, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.1rem;
+        color: g.$sub3;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+        }
+
+    }
+}

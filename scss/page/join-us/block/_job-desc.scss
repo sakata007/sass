@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.job-desc {
+    padding: 0 2.4rem;
+    margin-bottom: 19rem;
+    @include g.mq('pc') {
+        margin-bottom: 40rem;
+    }
+    &__wrapper {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__heading {
+        @include g.heading;
+        margin-bottom: 3rem;
+        span {
+            @include g.heading-sub;
+        }
+        @include g.mq('pc') {
+            margin-bottom: 5rem;
+        }
+    }
+    &__list {
+        flex-flow: column;
+        @include g.mq('pc') {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;        
+        }
+    }
+    &__term {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: rgba(16,16,16,.3);
+        flex-basis: 25%;
+        padding: 3rem 0 2rem;
+        @include g.mq('pc') {
+            font-size: 2.4rem;
+            padding: 6rem 0 0 2rem;
+            border-bottom: 2px solid g.$sub;
+
+        }
+    } 
+    &__detail {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2;
+        color: g.$text;
+        letter-spacing: 0.028em;
+        flex-basis: 75%;
+        padding: 0 0 1.5rem;
+        border-bottom: 2px solid g.$sub;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+            letter-spacing: 0.036em;
+            padding: 4.8rem 0 4.8rem 2rem;
+        }
+    }
+    &__term:first-of-type {
+        border-top: 2px solid g.$sub;
+    }
+    &__detail:first-of-type {
+        @include g.mq('pc') {
+            border-top: 2px solid g.$sub;
+        }
+    }
+    &__term:last-of-type {
+        @include g.mq('pc') {
+            margin-bottom: 8rem;
+        }
+    }
+    &__detail:last-of-type {
+        margin-bottom: 8rem;
+    }
+    &__btn {
+        @include g.btn-sub;
+        @include g.mq('pc') {
+            margin: 0 auto;
+        }
+    }
+}
+

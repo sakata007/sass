@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.works {
+    padding-top: 3rem;
+    @include g.mq('tab') {
+        padding-top: 12rem;
+    }
+    &__wrapper {
+        max-width: 918px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0rem 2.4rem;
+        @include g.mq('tab') {
+            display: none;
+            margin: 0 auto 32.6rem;
+        }
+    }
+    &__wrapper--pc {
+        display: none;
+        @include g.mq('tab') {
+                max-width: 918px;
+                width: 100%;
+                padding: 0rem 2.4rem;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    &__column {
+        @include g.mq('tab') {
+            width: 48%;
+        }
+    }
+    &__box {
+        max-width: 327px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        cursor: pointer;
+
+        @include g.mq('tab') {
+            max-width: 420px;
+        }
+    }
+    &__box:last-of-type {
+        margin-bottom: 6rem;
+        @include g.mq('tab') {
+            margin-bottom: 8rem;
+        }
+    }
+    &__figure {
+        width: 100%;
+        height: 327px;
+        margin: 0 0 1.5rem;
+        overflow: hidden;
+        img {
+            height: 100%;
+            transition: transform .3s;
+            &:hover {
+                transform: scale(1.2,1.2);
+                transition: transform .3s;
+            }
+        }
+        @include g.mq('tab') {
+            max-width: 420px;
+            height: 420px;
+            margin-bottom: 2rem;
+        }
+    }
+    &__category {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: g.$text;
+        letter-spacing: 0.028em;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+            letter-spacing: 0.036em;
+        }
+    }
+    &__heading {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: g.$text;
+        @include g.mq('pc') {
+            font-size: 2.4rem;
+        }
+    }
+    &__inner {
+        display: none;
+        height: 196px;
+        transition: transform .6s;
+        &.open {
+            transition: transform .6s;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__text {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: g.$text;
+        line-height: 2;
+        letter-spacing: 0.028em;
+        margin: 1rem 0 0;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+            letter-spacing: 0.036em;
+        }
+    }
+    &__group {
+        margin-top: auto;
+    }
+    &__tag {
+        font-family: acumin-pro, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.6rem;
+        line-height: 28px;
+        color: g.$sub3;
+        height: 28px;
+        display: inline-block;
+        border-radius: 15px;
+        background-color: g.$sub2;
+        padding: 0 1.6rem;
+        margin-right: 1rem;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+    &__btn {
+        @include g.btn-sub;
+        margin: 0 0 32.6rem 2.4rem;
+        @include g.mq('pc') {
+            margin: 0 auto 40rem;
+        }
+    }
+
+
+    &__bottom {
+        background-color: g.$sub2;
+        padding: 3.5rem 2.4rem;
+    }
+    &__comment {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2;
+        color: g.$text;
+        letter-spacing: 0.028em;
+        max-width: 870px;
+        width: 100%;
+        margin: 0 auto;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+            letter-spacing: 0.036em;
+        }
+    }
+    
+}
+
+

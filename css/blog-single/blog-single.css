@@ -1,0 +1,275 @@
+@charset "UTF-8";
+.blog-upper {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .blog-upper {
+    background-color: #f7f7f7;
+    display: block;
+    margin-top: 19rem;
+  }
+}
+.blog-upper__wrapper {
+  margin: 0 auto;
+  max-width: 870px;
+  padding: 5.1rem 0;
+  width: 100%;
+}
+
+.blog-upper .breadcrumbs .breadcrumbs__item:last-of-type {
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.contents {
+  margin: 15rem 0 20rem;
+  padding: 0 2.4rem 7rem;
+}
+@media screen and (min-width: 1025px) {
+  .contents {
+    margin: 5.1rem 0 40rem;
+    margin-bottom: 13rem;
+  }
+}
+.contents__wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+.contents__upper {
+  margin: 0 auto 2rem;
+  max-width: 870px;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .contents__upper {
+    margin-bottom: 8rem;
+  }
+}
+.contents__inner {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1025px) {
+  .contents__inner {
+    margin-bottom: 2.5rem;
+  }
+}
+.contents__inner span {
+  background-color: #232323;
+  border-radius: 15px;
+  color: #fff;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 24px;
+  letter-spacing: 0.024em;
+  line-height: 24px;
+  text-align: center;
+  width: 79px;
+}
+@media screen and (min-width: 1025px) {
+  .contents__inner span {
+    font-size: 1.4rem;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+  }
+}
+.contents__inner time {
+  color: #898989;
+  font-family: acumin-pro, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+}
+@media screen and (min-width: 1025px) {
+  .contents__inner time {
+    font-size: 1.8rem;
+  }
+}
+.contents__heading {
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2;
+}
+@media screen and (min-width: 1025px) {
+  .contents__heading {
+    font-size: 2.8rem;
+  }
+}
+.contents__figure {
+  margin: 0 0 3rem;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .contents__figure {
+    margin: 0 0 10rem;
+  }
+}
+.contents__block {
+  margin: 0 auto 6rem;
+  max-width: 287px;
+  width: 81%;
+}
+@media screen and (min-width: 1025px) {
+  .contents__block {
+    margin-bottom: 11rem;
+    max-width: 870px;
+  }
+}
+.contents__block:first-of-type {
+  margin-bottom: 0;
+}
+.contents__title {
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1025px) {
+  .contents__title {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+}
+.contents__text {
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.028em;
+  line-height: 2;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1025px) {
+  .contents__text {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+    margin-bottom: 2rem;
+  }
+}
+.contents__blank {
+  background-color: #EDEDED;
+  height: 185px;
+  width: 100%;
+}
+
+.toc {
+  background-color: #f7f7f7;
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.028em;
+  margin: 0 auto 6rem;
+  padding: 4rem 2.4rem 6rem;
+  width: 86%;
+}
+@media screen and (min-width: 1025px) {
+  .toc {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+    margin-bottom: 9rem;
+    max-width: 870px;
+    padding: 4rem 6rem 6rem;
+  }
+}
+.toc__title {
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.028em;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  .toc__title {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+}
+.toc__item {
+  border-bottom: 1px solid #232323;
+  padding: 1.8rem 0;
+}
+
+.page-nav {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #101010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 44px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1025px) {
+  .page-nav {
+    font-size: 1.8rem;
+    height: 60px;
+  }
+}
+
+.pages {
+  padding: 0 2.4rem;
+}
+.pages__wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+.pages__heading {
+  color: #101010;
+  font-family: acumin-pro, sans-serif;
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 3.7rem;
+}
+@media screen and (min-width: 1025px) {
+  .pages__heading {
+    font-size: 3.4rem;
+  }
+}
+.pages__heading span {
+  color: #101010;
+  display: block;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+@media screen and (min-width: 1025px) {
+  .pages__heading span {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .pages__heading {
+    margin-bottom: 5.7rem;
+  }
+}

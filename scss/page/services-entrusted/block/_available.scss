@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.available {
+    padding: 0 2.4rem;
+    margin-bottom: 20rem;
+    @include g.mq('pc') {
+        margin-bottom: 40rem;
+    }
+    &__wrapper {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__heading {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: g.$text;
+        padding: 2.6rem 0;
+        @include g.mq('pc') {
+            font-size: 2.4rem;
+            padding: 16rem 0 4rem;
+        }
+    }
+    &__box {
+        border-top: 2px solid g.$sub;
+        padding: 3rem 0;
+        @include g.mq('pc') {
+            padding: 4.8rem 0;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+    &__box:last-of-type {
+        border-bottom: 2px solid g.$sub;
+        margin-bottom: 8rem;
+    }
+    &__figure {
+        max-width: 327px;
+        width: 100%;
+        margin: 0 auto 4rem;
+        @include g.mq('pc') {
+            max-width: 342px;
+            margin: 0;
+        }
+    }
+    &__left {
+        @include g.mq('pc') {
+            display: none;
+        }
+    }
+    &__left--pc {
+        display: none;
+        @include g.mq('pc') {
+            display: flex;
+        }
+    }
+    &__inner {
+        display: flex;
+    }
+    &__block {
+        display: none;
+        @include g.mq('pc') {
+            max-width: 499px;
+            width: 100%;
+            display: block;
+        }
+    }
+    &__number {
+        font-family: acumin-pro, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.6rem;
+        color: g.$text;
+        width: 35px;
+        opacity: 0.3;
+        @include g.mq('pc') {
+            font-size: 2.4rem;
+            display: block;
+            width: 58px;
+        }
+    }
+    &__title {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: g.$text;
+        @include g.mq('pc') {
+            font-size: 2.4rem;
+        }
+        span {
+            font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2;
+            color: g.$text;
+            letter-spacing: 0.032em;
+            display: block;
+            @include g.mq('pc') {
+                font-size: 1.8rem;
+                letter-spacing: 0.036em;
+            }
+        }
+    }
+    &__text {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2;
+        color: g.$text;
+        letter-spacing: 0.028em;
+        margin: 0;
+        @include g.mq('pc') {
+            font-size: 1.8rem;
+            letter-spacing: 0.036em;
+        }
+    }
+    &__btn {
+        @include g.btn-sub;
+        @include g.mq('pc') {
+            margin: 0 auto;
+        }
+    }
+}

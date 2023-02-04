@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.blog-upper {
+    display: none;
+    @include g.mq('pc') {
+        display: block;
+        background-color: g.$sub2;
+        margin-top: 19rem;
+    }
+    &__wrapper {
+        max-width: 870px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 5.1rem 0;
+    }
+}
+
+.blog-upper .breadcrumbs .breadcrumbs__item:last-of-type {
+    font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: g.$text;
+}

@@ -1,0 +1,279 @@
+@charset "UTF-8";
+.contact {
+  margin-bottom: 20rem;
+  padding: 0 2.4rem;
+}
+@media screen and (min-width: 1025px) {
+  .contact {
+    margin: 12rem 0 40rem;
+  }
+}
+.contact__wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+.contact__btn-area {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  .contact__btn-area {
+    height: 120px;
+  }
+}
+.contact__tab-btn {
+  -webkit-transition: all 0.3s ease-out;
+  color: rgba(16, 16, 16, 0.3);
+  cursor: pointer;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+@media screen and (min-width: 1025px) {
+  .contact__tab-btn {
+    font-size: 2.4rem;
+  }
+}
+.contact__tab-btn.active {
+  color: #101010;
+}
+.contact__tab-btn:first-of-type {
+  width: 38%;
+}
+@media screen and (min-width: 1025px) {
+  .contact__tab-btn:first-of-type {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+.contact__tab-btn:last-of-type {
+  width: 62%;
+}
+@media screen and (min-width: 1025px) {
+  .contact__tab-btn:last-of-type {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+.contact__panel {
+  display: none;
+}
+.contact__panel.active {
+  display: block;
+}
+
+.form__bg {
+  background-color: #f7f7f7;
+  margin-bottom: 8rem;
+  padding: 5rem 1.6rem 6rem;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .form__bg {
+    padding: 8rem 12.5rem 7rem;
+  }
+}
+.form__box {
+  margin-bottom: 3rem;
+}
+.form__label {
+  color: #101010;
+  display: block;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1025px) {
+  .form__label {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+}
+.form__input {
+  background-color: #fff;
+  border: none;
+  height: 80px;
+  padding: 0 2.5rem;
+  width: 100%;
+}
+.form__input::-webkit-input-placeholder, .form__textarea--sp::-webkit-input-placeholder, .form__textarea--pc::-webkit-input-placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+.form__input::-moz-placeholder, .form__textarea--sp::-moz-placeholder, .form__textarea--pc::-moz-placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+.form__input:-ms-input-placeholder, .form__textarea--sp:-ms-input-placeholder, .form__textarea--pc:-ms-input-placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+.form__input::-ms-input-placeholder, .form__textarea--sp::-ms-input-placeholder, .form__textarea--pc::-ms-input-placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+.form__input::placeholder, .form__textarea--sp::placeholder, .form__textarea--pc::placeholder {
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.032em;
+}
+@media screen and (min-width: 1025px) {
+  .form__input::-webkit-input-placeholder, .form__textarea--sp::-webkit-input-placeholder, .form__textarea--pc::-webkit-input-placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+  .form__input::-moz-placeholder, .form__textarea--sp::-moz-placeholder, .form__textarea--pc::-moz-placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+  .form__input:-ms-input-placeholder, .form__textarea--sp:-ms-input-placeholder, .form__textarea--pc:-ms-input-placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+  .form__input::-ms-input-placeholder, .form__textarea--sp::-ms-input-placeholder, .form__textarea--pc::-ms-input-placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+  .form__input::placeholder, .form__textarea--sp::placeholder, .form__textarea--pc::placeholder {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+}
+.form__textarea {
+  background-color: #fff;
+  border: none;
+  height: 500px;
+  padding: 2.5rem;
+  resize: none;
+  width: 100%;
+}
+.form__textarea--sp, .form__textarea--pc {
+  background-color: #fff;
+  border: none;
+  border: none;
+  resize: none;
+  width: 100%;
+}
+.form__textarea--sp {
+  height: 124px;
+  padding: 3rem 2.5rem 0;
+}
+@media screen and (min-width: 1025px) {
+  .form__textarea--sp {
+    display: none;
+  }
+}
+.form__textarea--pc {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .form__textarea--pc {
+    display: block;
+    height: 80px;
+    padding: 3rem 2.5rem 0;
+  }
+}
+.form__wrap {
+  position: relative;
+  width: 100%;
+}
+.form__wrap::after {
+  border-color: #C9C9C9 transparent transparent transparent;
+  border-style: solid;
+  border-width: 12px 12px 0 12px;
+  content: "";
+  height: 0px;
+  position: absolute;
+  right: 3%;
+  top: 45%;
+  width: 0px;
+}
+.form__select {
+  border: none;
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 80px;
+  letter-spacing: 0.032em;
+  padding-left: 2.4rem;
+  width: 100%;
+}
+.form__btn {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#EF2615), to(#D6003F));
+  background: linear-gradient(to right, #EF2615 0%, #D6003F 100%);
+  border-radius: 0 0 30px 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  font-weight: bold;
+  height: 60px;
+  justify-content: center;
+  position: relative;
+  width: 260px;
+}
+@media screen and (min-width: 1025px) {
+  .form__btn {
+    font-size: 1.8rem;
+    letter-spacing: 0.036em;
+  }
+}
+.form__btn:hover {
+  background: #fff;
+  border-bottom: 2px solid #D6003F;
+  border-left: 2px solid #D6003F;
+  border-right: 2px solid #EF2615;
+  border-top: 2px solid #EF2615;
+  color: #EF2615;
+  font-size: 1.7rem;
+  opacity: 1;
+}
+@media screen and (min-width: 1025px) {
+  .form__btn:hover {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .form__btn {
+    margin: 0 auto;
+  }
+}

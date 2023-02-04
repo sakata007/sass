@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.keyvisual {
+  height: 820px;
+  background-color: #000;
+  padding: 0 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 19rem;
+  overflow: hidden;
+  @include g.mq('pc') {
+    height: 1290px;
+    margin-bottom: 39rem;
+  }
+  &__wrapper {
+      max-width: 330px;
+      width: 100%;
+      position: absolute;
+      top: 18%;
+      left: 6%;
+      z-index: map-get(g.$z, mv-wrapper);
+      @include g.mq('pc') {
+        top: 36%;
+        left: 21%;
+        max-width: 850px;
+      }
+  }
+  &__heading {
+      font-family: acumin-pro, sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 1.6rem;
+      color: g.$sub3;
+      margin-bottom: 2rem;
+      @include g.mq('pc') {
+          font-size: 2.4rem;
+      }
+  }
+  &__vision {
+      font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      color: g.$base;
+      line-height: 2;
+      margin: 0 0 4.7rem;
+      br {
+        @include g.mq('pc') {
+          display: none;
+        }
+      }
+      @include g.mq('pc') {
+        font-size: 2.4rem;
+        margin: 0 0 3.1rem;
+      }
+  }
+  &__story {
+      font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: g.$base;
+      line-height: 2.5;
+      letter-spacing: 0.028em;
+      margin: 0 0 6.2rem;
+      @include g.mq('pc') {
+        font-size: 1.8rem;
+        line-height: 2;
+        letter-spacing: 0.036em;
+      }
+    }
+    &__story--br {
+      @include g.mq('pc') {
+        display: none;
+      }
+    }  
+}
+
+// 背景文字
+.sub-back-text {
+  padding-top: 11rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  @include g.mq('pc') {
+    padding: 14rem 0 17rem 37.5rem;
+  }
+  &__wrapper {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5.7rem;
+    letter-spacing: 0.015em;
+    background-color: transparent;
+    line-height: 0.8;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    text-stroke: 1px rgba(255, 255, 255, 0.2);
+    @include g.mq('pc') {
+      font-size: 12rem;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+      text-stroke: 1px rgba(255, 255, 255, 0.25);  
+    }
+  }
+}
+
+.sub-back-text__1 {
+  letter-spacing: 0.05em;
+  @include g.mq('pc') {
+    letter-spacing: 0.04em;
+  }
+}
+.sub-back-text__2 {
+  letter-spacing: 0.04em;
+  @include g.mq('pc') {
+    letter-spacing: 0;
+  }
+}
+.sub-back-text__3 {
+  letter-spacing: 0.04em;
+  @include g.mq('pc') {
+    letter-spacing: 0;
+  }
+}
+.sub-back-text__4 {
+  letter-spacing: 0.04em;
+  @include g.mq('pc') {
+    letter-spacing: 0;
+  }
+}
+.sub-back-text__5 {
+  letter-spacing: 0.05em;
+  @include g.mq('pc') {
+    letter-spacing: 0.03em;
+  }
+}
+.sub-back-text__6 {
+  letter-spacing: 0.04em;
+  @include g.mq('pc') {
+    letter-spacing: 0;
+  }
+}
+.sub-back-text__7 {
+  letter-spacing: 0.04em;
+  @include g.mq('pc') {
+    letter-spacing: 0;
+  }
+}
+
+  
+.sub-mv-text {
+  margin-bottom: 4.4rem;
+  @include g.mq('pc') {
+    margin-bottom: 4.9rem;
+  }
+}
+  

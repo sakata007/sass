@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+.sub-header {
+    position: absolute;
+    width: 100%;
+    padding: 0 2.4rem;
+    height: 130px;
+    transition: 1s;
+    z-index: map-get(g.$z, header-fixed);
+    @include g.mq('pc') {
+        height: 190px;
+    }
+    &.is-fixed {
+        width: 100%;
+        position: fixed;
+        z-index: map-get(g.$z, header-fixed);
+    }
+    &__wrapper {
+        max-width: 1700px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: auto;
+        @media screen and (min-width: g.$header-bp) {
+            width: 15%;
+        }
+    }
+    &__logo--sp {
+        width: 30px;
+        @include g.mq('tab') {
+            display: none;
+        }
+    }
+    &__logo--pc {
+        display: none;
+        @include g.mq('tab') {
+            display: block;
+            max-width: 250px;
+            width: 100%;
+        }
+        @include g.mq('pc') {
+            max-width: 300px;
+        }
+    }
+    &__nav {
+        @media screen and (min-width: g.$header-bp) {
+            display: none;
+        }
+    }
+    &__menu-logo {
+        width: 30px;
+        margin-bottom: 6rem;
+        padding-top: 1.5rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__item a {
+        font-family: acumin-pro, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: g.$sub2;
+        font-size: 2.4rem;
+        margin-bottom: 2.8rem;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__item--child a {
+        font-family: "游ゴシック体 Pr6N", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: g.$sub3;
+        margin-bottom: 2.8rem;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+
+// humburger btn
+.sub-hamburger {
+    display: inline-block;
+    text-decoration: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    @media screen and (min-width: g.$header-bp) {
+        display: none;
+    }
+}
+  
+.js-sub-hamburger {
+    width: 23px;
+    height: 48px;
+    position: relative;
+    padding: 0;
+    z-index: map-get(g.$z, js-hamburger);
+    outline: none;
+    transition: all .3s ease-in-out;
+    &__line {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 3px;
+        background-color: g.$sub;
+        transition: inherit;
+        &::before,
+        &::after {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+            content: '';
+            transition: inherit;
+        }
+        &::before {
+            top: -9px;
+        }
+        &::after {
+            top: 9px;
+        }
+    }
+} 
+  
+  
+  
+// when drawer is open
+.is-drawer-active {
+    .js-header__menu {
+        transform: translateY(0%);
+        transition: 0.6s;
+        overflow: auto;
+    }
+}
+    
+.js-sub-hamburger[aria-expanded="true"] .js-sub-hamburger__line {
+    background-color: transparent;
+    &::before,
+    &::after {
+        top: 0;
+        background-color: g.$base
+    }
+}
+  
+.js-sub-hamburger[aria-expanded="true"] .js-sub-hamburger__line {
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+  
+//when header menu is open
+.js-header__menu {
+    @media screen and (max-width: #{g.$header-bp - 1px}) {
+        position: fixed;
+        z-index: map-get(g.$z, header-fixed);
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        height: 100vh;
+        background-color: g.$text;
+        color: g.$base;
+        transform: translateY(-100%);
+        transition: 0.6s;
+        padding: 4rem 2.4rem;
+    }
+}
+
+
+//header nav for pc
+.sub-nav-pc {
+    display: none;
+    @media screen and (min-width: g.$header-bp) {
+        display: flex;
+        width: 55%;
+    }
+    &__list {
+        @media screen and (min-width: g.$header-bp) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    }
+    &__item {
+        @media screen and (min-width: g.$header-bp) {
+            margin-left: 6.2rem;
+            white-space: nowrap;
+            position: relative;
+        }
+    }
+    &__item a {
+        font-family: acumin-pro, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: g.$sub;
+        font-size: 1.8rem;
+        &:hover {
+            // font-size: 1.9rem;
+            transform: scale(1.1, 1.1);
+            opacity: 0.5;
+        }
+    }
+}
+
+
+// 今いるページのメニューの下に赤い点を表示
+.current-about-us .sub-nav-pc .sub-nav-pc__item a[href="about-us.html"]::after,
+.current-services .sub-nav-pc .sub-nav-pc__item a[href="services.html"]::after,
+.current-works .sub-nav-pc .sub-nav-pc__item a[href="works.html"]::after,
+.current-join-us .sub-nav-pc .sub-nav-pc__item a[href="join-us.html"]::after,
+.current-blog .sub-nav-pc .sub-nav-pc__item a[href="blog.html"]::after,
+.current-company .sub-nav-pc .sub-nav-pc__item a[href="company.html"]::after,
+.current-faq .sub-nav-pc .sub-nav-pc__item a[href="faq.html"]::after,
+.current-contact .sub-nav-pc .sub-nav-pc__item a[href="contact.html"]::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    display: block;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: linear-gradient(to bottom, g.$accent1, g.$accent2);
+}
+
+
+//ハンバーガーボタンが開いた時、背景固定
+html.is-fixed,
+html.is-fixed body {
+  height: 100%;
+  overflow: hidden;
+}
+        

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.contact-send {
+    padding: 2.4rem;
+    margin: 3rem 0 193.2rem;
+    @include g.mq('pc') {
+        margin: 13rem 0 209.4rem;
+    }
+    &__wrapper {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__heading {
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: g.$text;
+        margin-bottom: 3rem;
+        text-align: center;
+        @include g.mq('pc') {
+            font-size: 2.4rem;
+            margin-bottom: 9rem;
+        }
+    }
+    &__btn {
+        @include g.btn-small;
+        font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: bold;
+        background-color: g.$sub;
+        margin: 0 auto;
+        &:hover {
+            background-color: g.$sub2;
+            color: g.$sub;
+            border: 2px solid g.$sub;
+        }
+    }
+}

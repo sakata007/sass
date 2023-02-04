@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+$header-bp: 1180px;
+
+$breakpoints: (
+  sp: "screen and (max-width: 599px)",
+  tab: "screen and (min-width: 600px)",
+  pc: "screen and (min-width: 1025px)",
+);
+
+
+//color
+$base: #fff;
+$accent1: #EF2615;
+$accent2: #D6003F;
+$text: #101010;
+$sub: #232323;
+$sub2: #f7f7f7;
+$sub3: #a0a0a0;
+
+
+// z-index
+$z: (
+ js-hamburger: 100,
+ header-fixed: 80,
+ mv-wrapper: 20,
+ vertical: -30,
+ visual: -50,
+);

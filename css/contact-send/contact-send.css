@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.contact-send {
+  margin: 3rem 0 193.2rem;
+  padding: 2.4rem;
+}
+@media screen and (min-width: 1025px) {
+  .contact-send {
+    margin: 13rem 0 209.4rem;
+  }
+}
+.contact-send__wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+.contact-send__heading {
+  color: #101010;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  .contact-send__heading {
+    font-size: 2.4rem;
+    margin-bottom: 9rem;
+  }
+}
+.contact-send__btn {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #232323;
+  border-radius: 0 0 30px 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: acumin-pro, sans-serif;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: bold;
+  font-weight: bold;
+  height: 60px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 260px;
+}
+@media screen and (min-width: 1025px) {
+  .contact-send__btn {
+    font-size: 1.8rem;
+  }
+}
+.contact-send__btn:hover {
+  font-size: 1.7rem;
+  opacity: 1;
+}
+@media screen and (min-width: 1025px) {
+  .contact-send__btn:hover {
+    font-size: 1.9rem;
+  }
+}
+.contact-send__btn:hover {
+  background-color: #f7f7f7;
+  border: 2px solid #232323;
+  color: #232323;
+}

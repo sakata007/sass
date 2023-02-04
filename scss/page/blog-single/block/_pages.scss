@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@use "../../../global" as g;
+
+.pages {
+    padding: 0 2.4rem;
+    &__wrapper {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__heading {
+        @include g.heading;
+        margin-bottom: 3.7rem;
+        span {
+            @include g.heading-sub;
+        }
+        @include g.mq('pc') {
+            margin-bottom: 5.7rem;
+        }
+    }
+}

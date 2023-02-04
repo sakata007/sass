@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.company {
+  margin: 3rem 0 20rem;
+  padding: 0 2.4rem;
+}
+@media screen and (min-width: 1025px) {
+  .company {
+    margin: 12rem 0 32rem;
+  }
+}
+.company__wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+.company__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+@media screen and (min-width: 1025px) {
+  .company__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+}
+.company__term {
+  -ms-flex-preferred-size: 25%;
+  color: rgba(16, 16, 16, 0.3);
+  flex-basis: 25%;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 3rem 0 1rem;
+}
+@media screen and (min-width: 1025px) {
+  .company__term {
+    border-bottom: 2px solid #232323;
+    font-size: 2.4rem;
+    height: 152px;
+    line-height: 152px;
+    padding: 0 0 0 2rem;
+  }
+}
+.company__detail {
+  -ms-flex-preferred-size: 75%;
+  border-bottom: 2px solid #232323;
+  color: #101010;
+  flex-basis: 75%;
+  font-family: "游ゴシック体 Pr6N", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.028em;
+  line-height: 2;
+  padding-bottom: 3rem;
+}
+@media screen and (min-width: 1025px) {
+  .company__detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    height: 152px;
+    justify-content: center;
+    letter-spacing: 0.036em;
+    padding: 0;
+  }
+}
+.company__term:first-of-type {
+  border-top: 2px solid #232323;
+}
+@media screen and (min-width: 1025px) {
+  .company__detail:first-of-type {
+    border-top: 2px solid #232323;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .company__term:last-of-type {
+    margin-bottom: 8rem;
+  }
+}
+.company__detail:last-of-type {
+  margin-bottom: 8rem;
+}
